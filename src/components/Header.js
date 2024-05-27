@@ -10,7 +10,7 @@ const Header = ({handleToggleSidebar}) => {
 const [input, setInput] = useState('')
 const [inputHistory, setInputHistory] = useState([])
 const [isFormFocused, setIsFormFocused] = useState(false)
-const navigate = use Navigate()
+const navigate = useNavigate()
 const handleSubmit = (e) => {
   e.preventDefault()
   navigate(`/search/${input}`)
